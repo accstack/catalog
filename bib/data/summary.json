@@ -1,52 +1,52 @@
 {
- "built": "2026-09-17T16:57:42Z",
- "languages": 8627,
- "in_catalog": 1864,
+ "built": "2026-09-17T19:37:09Z",
+ "languages": 8628,
+ "in_catalog": 3264,
  "outside_catalog": 6763,
  "name_only_records_left_out": 19,
- "languages_zero_sources": 779,
- "languages_with_world_result": 4749,
+ "languages_zero_sources": 271,
+ "languages_with_world_result": 6169,
  "languages_with_sweep_result": 732,
- "languages_with_new_statement": 3147,
- "languages_with_verified_new_statement": 1860,
- "sources": 113123,
+ "languages_with_new_statement": 3755,
+ "languages_with_verified_new_statement": 2908,
+ "sources": 129277,
  "by_tag": {
   "states stress (quoted in catalog)": 1807,
   "states stress (domain / secondary stress passage)": 380,
-  "states stress (new statement, read)": 3207,
+  "states stress (new statement, read)": 3820,
   "read: confirms the catalog coding": 1567,
   "read: refines the catalog coding": 641,
   "read: contradicts the catalog coding": 215,
-  "read: notes on stress": 6937,
-  "read: silent on stress": 20373,
+  "read: notes on stress": 9093,
+  "read: silent on stress": 26633,
   "read (morphology study)": 585,
   "consulted for the record": 1308,
-  "wanted: likely states stress, not held": 27455,
-  "not read: abstract or record only": 4749,
-  "not read: not accessible": 1313,
-  "Glottolog description, unread": 34353,
-  "Glottolog phonology work, unread": 5198,
-  "named by the earlier scan, not opened": 3035
+  "wanted: likely states stress, not held": 34442,
+  "not read: abstract or record only": 6250,
+  "not read: not accessible": 1845,
+  "Glottolog description, unread": 33369,
+  "Glottolog phonology work, unread": 5069,
+  "named by the earlier scan, not opened": 2253
  },
  "by_access_class": {
-  "digital": 47559,
-  "scan_deliver": 3250,
-  "print_only": 9170,
-  "unknown": 53144
+  "digital": 57768,
+  "scan_deliver": 3390,
+  "print_only": 11381,
+  "unknown": 56738
  },
  "by_origin": {
   "database": 2928,
-  "glottolog": 52232,
-  "reader": 54928,
-  "scan": 3035
+  "glottolog": 52233,
+  "reader": 71863,
+  "scan": 2253
  },
  "world_store": {
-  "A": 4749,
-  "B": 1496
+  "A": 6169,
+  "B": 2544
  },
  "sweep_store": {
   "A": 730,
   "B": 362
  },
- "seconds": 359.5
+ "seconds": 464.7
 }
