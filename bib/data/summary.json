@@ -1,5 +1,5 @@
 {
- "built": "2026-09-18T13:16:14Z",
+ "built": "2026-09-18T13:45:02Z",
  "languages": 8629,
  "in_catalog": 5109,
  "outside_catalog": 6763,
@@ -39,23 +39,39 @@
   "named in our earlier survey, not yet opened": 1334
  },
  "by_access_class": {
-  "digital": 59147,
-  "scan_deliver": 3690,
-  "print_only": 13203,
-  "unknown": 60100
+  "digital": 72904,
+  "digital_open": 55934,
+  "digital_gated": 16970,
+  "scan_deliver": 1983,
+  "print_only": 11741,
+  "unknown": 49512
  },
  "languages_by_best_access": {
-  "digital": 8625,
-  "scan_deliver": 1,
+  "digital": 8623,
+  "digital_gated": 3,
+  "scan_deliver": 0,
   "print_only": 1,
   "unknown": 2,
   "none": 0
  },
- "works_demoted_from_dead_link": {
-  "fetch-failed": 1205,
-  "not-accessible": 1792,
-  "too-large-skipped": 23,
-  "wrong-item": 261
+ "works_with_unopenable_link": {
+  "abstract-or-snippet-only -> digital": 8,
+  "abstract-or-snippet-only -> digital gated": 437,
+  "fetch-failed -> digital": 38,
+  "fetch-failed -> digital gated": 317,
+  "fetch-failed -> print_only": 12,
+  "fetch-failed -> scan_deliver": 22,
+  "fetch-failed -> unknown": 816,
+  "not-accessible -> digital": 23,
+  "not-accessible -> digital gated": 737,
+  "not-accessible -> print_only": 274,
+  "not-accessible -> scan_deliver": 58,
+  "not-accessible -> unknown": 700,
+  "wrong-item -> digital": 1,
+  "wrong-item -> digital gated": 196,
+  "wrong-item -> print_only": 6,
+  "wrong-item -> scan_deliver": 14,
+  "wrong-item -> unknown": 44
  },
  "by_origin": {
   "database": 2928,
@@ -77,5 +93,5 @@
   "items_listed": 4633,
   "languages_listed": 4613
  },
- "seconds": 1427.4
+ "seconds": 1407.7
 }

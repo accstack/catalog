@@ -84,6 +84,7 @@ td.num{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-variant-numer
 .pills .tag b{font-family:"IBM Plex Mono",monospace;font-weight:500;font-variant-numeric:tabular-nums}
 .p-states{background:var(--k-fixed-bg);color:var(--k-fixed)} .p-read{background:var(--k-dom-bg);color:var(--k-dom)} .p-wanted{background:var(--k-weight-bg);color:var(--k-weight)} .p-unread{background:var(--k-other-bg);color:var(--k-other)}
 .a-digital{background:var(--k-fixed-bg);color:var(--k-fixed)} .a-scan{background:var(--k-lex-bg);color:var(--k-lex)} .a-print{background:var(--k-weight-bg);color:var(--k-weight)} .a-unknown{background:var(--k-other-bg);color:var(--k-other)}
+.a-digital.a-gated{background:transparent;border:1px solid var(--k-fixed);color:var(--k-fixed);padding-top:1px;padding-bottom:1px}   /* a digital copy behind a wall: the hollow variant of Digital */
 .b-confirms{background:var(--k-fixed-bg);color:var(--k-fixed)} .b-refines{background:var(--k-weight-bg);color:var(--k-weight)} .b-contradicts{background:transparent;border:1px solid var(--warn);color:var(--warn)}
 .tag.ok{background:var(--k-fixed-bg);color:var(--k-fixed)} .tag.warn{background:transparent;border:1px solid var(--warn);color:var(--warn)} .tag.muted{background:var(--k-other-bg);color:var(--k-other)}
 /* confidence levels: the same classes and tokens as the catalog page (page_head.html) */
