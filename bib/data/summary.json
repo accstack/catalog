@@ -1,52 +1,52 @@
 {
- "built": "2026-09-17T23:33:18Z",
- "languages": 8628,
- "in_catalog": 3264,
+ "built": "2026-09-18T01:55:41Z",
+ "languages": 8629,
+ "in_catalog": 5109,
  "outside_catalog": 6763,
  "name_only_records_left_out": 19,
  "languages_zero_sources": 0,
- "languages_with_world_result": 6762,
- "languages_with_sweep_result": 732,
- "languages_with_new_statement": 3960,
- "languages_with_verified_new_statement": 3949,
- "sources": 136775,
+ "languages_with_world_result": 6763,
+ "languages_with_sweep_result": 733,
+ "languages_with_new_statement": 3962,
+ "languages_with_verified_new_statement": 3951,
+ "sources": 135949,
  "by_tag": {
   "states stress (quoted in catalog)": 1807,
   "states stress (domain / secondary stress passage)": 380,
-  "states stress (new statement, read)": 4025,
+  "states stress (new statement, read)": 4027,
   "read: confirms the catalog coding": 1567,
   "read: refines the catalog coding": 641,
   "read: contradicts the catalog coding": 215,
-  "read: notes on stress": 10005,
-  "read: silent on stress": 29448,
+  "read: notes on stress": 10006,
+  "read: silent on stress": 29456,
   "read (morphology study)": 585,
   "consulted for the record": 1308,
-  "wanted: likely states stress, not held": 37350,
-  "not read: abstract or record only": 6848,
+  "likely states stress; not yet obtained": 37356,
+  "not read: abstract or record only": 6851,
   "not read: not accessible": 2068,
-  "Glottolog description, unread": 33308,
-  "Glottolog phonology work, unread": 5025,
-  "named by the earlier scan, not opened": 2195
+  "Glottolog description, unread": 33320,
+  "Glottolog phonology work, unread": 5027,
+  "named in our earlier survey, not yet opened": 1335
  },
  "by_access_class": {
-  "digital": 62245,
+  "digital": 62262,
   "scan_deliver": 3458,
-  "print_only": 12254,
-  "unknown": 58818
+  "print_only": 12256,
+  "unknown": 57973
  },
  "by_origin": {
   "database": 2928,
-  "glottolog": 52233,
-  "reader": 79419,
-  "scan": 2195
+  "glottolog": 52249,
+  "reader": 79437,
+  "scan": 1335
  },
  "world_store": {
-  "A": 6762,
-  "B": 3586
+  "A": 6763,
+  "B": 3587
  },
  "sweep_store": {
   "A": 730,
   "B": 362
  },
- "seconds": 447.1
+ "seconds": 929.8
 }
