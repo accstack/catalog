@@ -1,5 +1,5 @@
 {
- "built": "2026-09-18T12:27:51Z",
+ "built": "2026-09-18T13:16:14Z",
  "languages": 8629,
  "in_catalog": 5109,
  "outside_catalog": 6763,
@@ -10,6 +10,15 @@
  "languages_with_readall_result": 4613,
  "languages_with_new_statement": 4575,
  "languages_with_verified_new_statement": 4484,
+ "records_audited": 1864,
+ "by_confidence": {
+  "very confident": 1338,
+  "fairly confident": 2806,
+  "moderately confident": 164,
+  "disputed": 67,
+  "not confident": 734,
+  "not yet rated": 0
+ },
  "sources": 136140,
  "by_tag": {
   "states stress (quoted in catalog)": 1807,
@@ -30,10 +39,23 @@
   "named in our earlier survey, not yet opened": 1334
  },
  "by_access_class": {
-  "digital": 62417,
-  "scan_deliver": 3459,
-  "print_only": 12256,
-  "unknown": 58008
+  "digital": 59147,
+  "scan_deliver": 3690,
+  "print_only": 13203,
+  "unknown": 60100
+ },
+ "languages_by_best_access": {
+  "digital": 8625,
+  "scan_deliver": 1,
+  "print_only": 1,
+  "unknown": 2,
+  "none": 0
+ },
+ "works_demoted_from_dead_link": {
+  "fetch-failed": 1205,
+  "not-accessible": 1792,
+  "too-large-skipped": 23,
+  "wrong-item": 261
  },
  "by_origin": {
   "database": 2928,
@@ -55,5 +77,5 @@
   "items_listed": 4633,
   "languages_listed": 4613
  },
- "seconds": 1175.9
+ "seconds": 1427.4
 }
