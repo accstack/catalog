@@ -1,5 +1,5 @@
 {
- "built": "2026-09-18T06:10:04Z",
+ "built": "2026-09-18T12:27:51Z",
  "languages": 8629,
  "in_catalog": 5109,
  "outside_catalog": 6763,
@@ -7,33 +7,33 @@
  "languages_zero_sources": 0,
  "languages_with_world_result": 6763,
  "languages_with_sweep_result": 733,
- "languages_with_readall_result": 4608,
- "languages_with_new_statement": 4554,
- "languages_with_verified_new_statement": 4339,
+ "languages_with_readall_result": 4613,
+ "languages_with_new_statement": 4575,
+ "languages_with_verified_new_statement": 4484,
  "sources": 136140,
  "by_tag": {
   "states stress (quoted in catalog)": 1807,
   "states stress (domain / secondary stress passage)": 380,
   "states stress (new statement, read)": 4157,
-  "read: confirms the catalog coding": 2069,
-  "read: refines the catalog coding": 1541,
-  "read: contradicts the catalog coding": 344,
-  "read: notes on stress": 10489,
-  "read: silent on stress": 31243,
+  "read: confirms the catalog coding": 2070,
+  "read: refines the catalog coding": 1537,
+  "read: contradicts the catalog coding": 343,
+  "read: notes on stress": 10496,
+  "read: silent on stress": 31245,
   "read (morphology study)": 584,
   "consulted for the record": 1308,
-  "likely states stress; not yet obtained": 34717,
+  "likely states stress; not yet obtained": 34714,
   "not read: abstract or record only": 6807,
   "not read: not accessible": 2061,
-  "Glottolog description, unread": 32360,
+  "Glottolog description, unread": 32358,
   "Glottolog phonology work, unread": 4939,
   "named in our earlier survey, not yet opened": 1334
  },
  "by_access_class": {
-  "digital": 62416,
+  "digital": 62417,
   "scan_deliver": 3459,
   "print_only": 12256,
-  "unknown": 58009
+  "unknown": 58008
  },
  "by_origin": {
   "database": 2928,
@@ -50,10 +50,10 @@
   "B": 362
  },
  "readall_store": {
-  "A": 4628,
-  "B": 2189,
+  "A": 4633,
+  "B": 2933,
   "items_listed": 4633,
   "languages_listed": 4613
  },
- "seconds": 1451.9
+ "seconds": 1175.9
 }

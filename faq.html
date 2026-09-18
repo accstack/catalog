@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Word Stress Catalog · FAQ</title>
+<meta name="description" content="Questions and answers about the Word Stress Catalog: what the records mean, how to check one, where the sources come from, and how to reuse the data.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="bib/bib.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><h1>Word Stress Catalog</h1><span class="sub">Frequently asked questions</span></div>
+  <nav class="actions" aria-label="Site">
+    <a class="btn ghost" href="index.html">Catalog</a>
+    <a class="btn ghost" href="bib/index.html">Bibliography</a>
+    <a class="btn ghost" href="protocol.html">Protocol</a>
+    <a class="btn ghost nav-on" href="faq.html" aria-current="page">FAQ</a>
+  </nav>
+</header>
+<main class="doc" id="top">
+<p class="lead">Short answers to the questions people ask about the catalog. The <a href="protocol.html">Protocol</a> page has the full account of how a record is made and checked. Numbers are from the data release of 18 September 2026.</p>
+<div class="faqctl"><button type="button" id="openall">Expand all</button><button type="button" id="closeall">Collapse all</button><span>Click a question to open it.</span></div>
+
+<h2 id="start">Reading the catalog</h2>
+
+<details class="faq"><summary>What does the catalog tell me about a language?</summary><div class="a">
+<p>What its descriptions say about the placement of stress in the word: the stress type (fixed, weight-sensitive, lexical, set by morphology, tone or pitch accent, no word stress, and so on), the rule where there is one, the passage from the description that decides it with its page, every work consulted, any disagreement between descriptions, and our confidence in the classification. Click a language to open its record.</p>
+</div></details>
+
+<details class="faq"><summary>What do the strings of 1s and 0s mean?</summary><div class="a">
+<p>They give the stress pattern for each word length, read left to right, one digit per syllable: <b>1</b> is a stressed syllable and <b>0</b> an unstressed one. <span class="grid"><b>1</b>0 <b>1</b>00 <b>1</b>000</span> means initial stress in words of two, three and four syllables; <span class="grid">0<b>1</b> 0<b>1</b>0 00<b>1</b>0</span> means penultimate stress. Secondary stresses appear as further 1s in the string. The record also states the rule in words and, for fixed-stress languages, shows it as a ladder of syllables.</p>
+</div></details>
+
+<details class="faq"><summary>Why does the catalog open with fewer languages than it holds?</summary><div class="a">
+<p>By default it shows the languages rated very confident or fairly confident. The other levels (moderately confident, disputed, not confident, not yet rated) are there too: tick them in the Confidence filter on the left. The presets keep the default two levels, so a preset alone will not show them. The count at the top always says how many distinct languages match the current filters.</p>
+</div></details>
+
+<details class="faq"><summary>What is the difference between the strict set and the dominant set?</summary><div class="a">
+<p>Both are sets of fixed-stress languages whose rule has been formalized per word length. The <b>strict set</b> (305 languages) holds languages whose sources state one weight-blind rule with no exceptions at the level of the rule, and for the word rather than the phrase. The <b>dominant set</b> (507 languages) follows Gordon's (2002) looser criterion, in which the stated pattern is the usual one even if the source names exceptions; it contains the strict set. Every other classification on the site is a checked reading of the source, not yet a formalized rule.</p>
+</div></details>
+
+<details class="faq"><summary>What does "Fixed stress (not yet checked against the source)" mean?</summary><div class="a">
+<p>That a description states a weight-blind fixed rule for the language, the passage was quoted and confirmed by a second, independent reading, but the rule has not yet been written out for every word length and tested against the source's example words and exceptions, as the strict and dominant sets have been. There are 1,056 such records. They belong to neither set until that check is done.</p>
+</div></details>
+
+<details class="faq"><summary>How can I hear the language?</summary><div class="a">
+<p>Open the record and look for "Hear the language". 263 records carry a short clip of a few seconds from an openly licensed collection, with its source, licence and attribution; 1,106 more link to recordings held elsewhere. The Recordings filter finds them.</p>
+</div></details>
+
+<details class="faq"><summary>What are the "Feet or grids" and "Grid grammar" filters?</summary><div class="a">
+<p>They are theory annotations on the fixed-stress sets, not facts from the sources: whether a language's formalized rule is generated by Gordon's (2002) twelve-constraint grid theory, by an extended constraint set, or by layered feet, and whether a grid grammar can derive its main stress at all (the "Grid grammar can derive main stress" filter, yes or no). They are there for anyone comparing the catalog with metrical theory and can be ignored by everyone else.</p>
+</div></details>
+
+<h2 id="check">Checking a language</h2>
+
+<details class="faq"><summary>How do I check a classification myself?</summary><div class="a">
+<p>Open the record. The "Source passages" section quotes the deciding passage word for word with its citation and page, and says how strong the evidence is (a page image, an open full text, a publisher's text, a search snippet, or a quotation carried second-hand). "How this record was checked" says when it was read and whether a second reading agreed or a third reading settled it. "Full bibliography for this language" opens every work we know of for the language, with its access class, so you can go to the description itself.</p>
+</div></details>
+
+<details class="faq"><summary>The classification of my language is wrong. What do I do?</summary><div class="a">
+<p><a href="https://github.com/mattschwartzscience/word-stress-catalog/issues">Open an issue at github.com/mattschwartzscience/word-stress-catalog</a>. Name the language and, if you can, the description and page that decide the matter. A correction that changes a classification is made through a written ruling that quotes the source; the old reading stays visible on the record.</p>
+</div></details>
+
+<details class="faq"><summary>A record shows a contradiction. Which description wins?</summary><div class="a">
+<p>Neither is averaged away. If one description can be preferred, the record keeps that classification and states the disagreement in full under "Contradictions on record" (1,494 records carry one). If none can be preferred, the language is classified "Descriptions disagree" (56 records). A contradiction that a second reading confirmed sends the language to the judged reading that sets its confidence level; a contradiction the record inherited from an earlier comparison does not by itself lower the level. The "Why" line on the record says which applies.</p>
+</div></details>
+
+<details class="faq"><summary>Which variety or dialect does a record describe?</summary><div class="a">
+<p>The one its quoted description describes. Where the source names a variety other than the one the Glottolog entry names, or where the second reading raised the question, the record says so under "Which variety". A description that turns out to be of a language already on record is treated as a duplicate and set aside rather than entered twice.</p>
+</div></details>
+
+<details class="faq"><summary>Why is my language listed under a name I do not use?</summary><div class="a">
+<p>Languages are identified by their Glottolog 5.1 code and shown under the name the source or the database used. Search matches names, codes, families, authors and sources, so searching the code or another name will find it. Each record links to its Glottolog entry, which lists the other names.</p>
+</div></details>
+
+<details class="faq"><summary>Why is a language not in the catalog?</summary><div class="a">
+<p>Usually because no accessible description states its stress pattern or prosodic type. The bibliography page covers 8,629 languages, including those without a record, and says for each what was found: a statement in an open source, a statement reported second-hand only, a description that exists but is not accessible, an accessible description that is silent on stress, or no descriptive source known. Languages with a confirmed statement are added in rounds; the last two rounds added 3,245 records.</p>
+</div></details>
+
+<details class="faq"><summary>A description I know of is missing from the bibliography.</summary><div class="a">
+<p>The bibliography holds 136,140 works, drawn from Glottolog 5.1's bibliography for each language, from the catalog's own records and from works found while reading, and it will still have gaps. <a href="https://github.com/mattschwartzscience/word-stress-catalog/issues">Open an issue</a> with the citation and, if there is one, an open copy; a work that states the stress pattern will be read and its statement added to the record.</p>
+</div></details>
+
+<h2 id="sources">Sources and evidence</h2>
+
+<details class="faq"><summary>Who read the sources?</summary><div class="a">
+<p>Language models, not linguists. Every record from our own readings had a first reading that found and quoted the deciding passage, a second, independent reading that re-opened the source at the stated page to refute it, and, where the two disagreed, a third reading that settled it. No record is claimed to have been read by a linguist; the checks are machine readings against machine readings in the same saved copy. The Protocol page says what this method gets wrong.</p>
+</div></details>
+
+<details class="faq"><summary>What does "confirmed by a second reading" mean?</summary><div class="a">
+<p>That a separate, independent reading, given the first reading's quotation and classification and the instruction to refute them, re-opened the saved copy of the source at the stated page and found the quotation there word for word, agreed that the classification follows from it, and checked that the source describes this language and the word rather than the phrase. In this release 2,969 records were agreed at the second reading in the September readings, 151 more from August 2026 were confirmed by a second reading and reviewed by the editor, and 1,581 were settled by a third reading.</p>
+</div></details>
+
+<details class="faq"><summary>Are the quotations exact?</summary><div class="a">
+<p>They are meant to be, and the second reading checks them word for word against the saved copy. Quotations are given in the language of the source; 241 records add our English translation, marked as ours. Slips remain possible in the text of a scan, in a page number or in a translation, and we would like to hear of them.</p>
+</div></details>
+
+<details class="faq"><summary>Why are some statements second-hand?</summary><div class="a">
+<p>Because the original could not be opened. 162 records rest on a quotation carried by StressTyp2, WALS or a secondary work, and 257 on a search snippet only; both are marked as such under "Evidence", and a record with no first-hand confirmed statement is rated not confident. Once the original is read the record is updated.</p>
+</div></details>
+
+<details class="faq"><summary>What do the evidence labels mean?</summary><div class="a">
+<p>They say how strong the copy behind the quotation is: <b>page image of the source</b> (1,777 records), <b>open full text</b> (1,869), <b>publisher text</b> (528), <b>search snippet only</b> (257) and <b>quoted second-hand</b> (162). 542 records, mostly database records checked before the label existed, have none recorded.</p>
+</div></details>
+
+<details class="faq"><summary>What do Digital, Scan &amp; Deliver, Print only and Unknown mean?</summary><div class="a">
+<p>They describe how a copy of a work can be had. <b>Digital</b>: an open copy, a copy the project holds, or a copy behind a university library login. <b>Scan &amp; Deliver</b>: a research library holds a print copy; articles and chapters can usually be obtained as scans through your own library, whole books by interlibrary loan. <b>Print only</b>: located, but no open copy and not held by the libraries we checked. <b>Unknown</b>: not located, or not yet checked. The classes describe copies, not one institution.</p>
+</div></details>
+
+<details class="faq"><summary>Can I get a copy of a work from the catalog?</summary><div class="a">
+<p>The catalog does not redistribute the works. Where a work has an open copy, the bibliography links to it; otherwise the access class tells you how to obtain one through your own library. StressTyp2's own text is not reproduced, and the quotations on the site are short extracts from the cited pages, given with full attribution so that the classification can be checked.</p>
+</div></details>
+
+<details class="faq"><summary>How is the catalog related to StressTyp2, Gordon 2002 and WALS?</summary><div class="a">
+<p>It began with the 422 fixed-stress records of StressTyp2 and Gordon's (2002) appendix, each re-read against the description it cites; 54 records carry a correction to a database coding, stated in full, and the "Database corrections" filter lists them. WALS chapters 14A to 17A were used to find weight-sensitive languages and as a coding to compare against: each record says whether the StressTyp2 and WALS codings agree with the source. The rest of the catalog comes from our own readings of descriptions.</p>
+</div></details>
+
+<h2 id="confidence">Confidence</h2>
+
+<details class="faq"><summary>What do the confidence levels mean?</summary><div class="a">
+<p><b>Very confident</b>: clear consensus. <b>Fairly confident</b>: few sources or mild disagreement but a clear winner. <b>Moderately confident</b>: real disagreement but we think we know the answer. <b>Disputed</b>: authoritative sources disagree. <b>Not confident</b>: no confirmed first-hand statement, essentially a guess. Each record's "Why" line says what set its level, and a count of sources that agree, refine or contradict. In this release no language is yet moderately confident or disputed: the judged reading that sets those two levels is still to come.</p>
+</div></details>
+
+<details class="faq"><summary>Why is a language "not yet rated"?</summary><div class="a">
+<p>Because it has a contradiction confirmed by a second reading or a conflict between sources on record, or is classified as descriptions disagree, not determinable or variable, and the judged reading that sets the moderately confident and disputed levels has not yet reached it. 993 languages are in that state in this release; the 26 records without a Glottolog code have not been rated and show the same way. 1,276 languages are very confident, 2,327 fairly confident and 513 not confident.</p>
+</div></details>
+
+<details class="faq"><summary>Why is a language with only one source "fairly confident"?</summary><div class="a">
+<p>Because that is what the definition says: a low number of sources but a clear winner. Fairly confident is set when one first-hand source stands alone and was confirmed by a second reading; when several sources support the record and the only contradictions are ones no second reading confirmed; or when other works read support a record whose own quotation was not confirmed first-hand. Very confident needs the record's own confirmed first-hand source and at least one other independent first-hand work that agrees, and no work read that contradicts.</p>
+</div></details>
+
+<details class="faq"><summary>Does "very confident" mean the classification is right?</summary><div class="a">
+<p>It means the descriptions agree and the quotation was confirmed. If the descriptions are all wrong in the same way, the catalog will be wrong with them; the level rates the evidence on record, not the language.</p>
+</div></details>
+
+<h2 id="data">Using the data</h2>
+
+<details class="faq"><summary>Can I download the data?</summary><div class="a">
+<p>Yes. On the catalog and on the bibliography page, "Download this list as CSV" saves whatever is on screen under the current filters, with the quotations, citations, contradictions, database corrections and confidence levels. Filter first, then download.</p>
+</div></details>
+
+<details class="faq"><summary>Under what terms can I reuse it?</summary><div class="a">
+<p>The public copy of the catalog is an invitation-only preview. StressTyp2 (Goedemans, Heinz &amp; van der Hulst 2015) is CC BY-NC-ND and is cited for its codings and references only. The audio clips carry the licences of the collections they come from, listed clip by clip. The quotations from descriptions are short extracts reproduced with attribution so that the classification can be checked. For any reuse beyond checking a record, <a href="https://github.com/mattschwartzscience/word-stress-catalog/issues">open an issue</a> and ask.</p>
+</div></details>
+
+<details class="faq"><summary>How do I cite a record?</summary><div class="a">
+<p>Cite the description the record quotes, which is the evidence, and the catalog with the date of the data release shown in the masthead (this release is 18 September 2026), since records change between releases. Each record links to its Glottolog entry for the language's code and classification.</p>
+</div></details>
+
+<details class="faq"><summary>Does the catalog cover secondary stress?</summary><div class="a">
+<p>Where the source describes it. Secondary stresses appear in the rule strings of the fixed-stress sets, the record states the secondary-stress rule in the source's words, and the "Rhythm of secondary stresses" filter groups the fixed-stress languages by their footing. For the other classifications the record carries what the source says.</p>
+</div></details>
+
+<details class="faq"><summary>What about tone languages?</summary><div class="a">
+<p>They are in the catalog as "Tone or pitch accent" (1,380 records): the prosodic type is recorded with the passage that states it, and no stress rule is given. Languages whose descriptions say they have no word stress are recorded as such (115 records).</p>
+</div></details>
+
+<details class="faq"><summary>How often is the catalog updated?</summary><div class="a">
+<p>The pages are rebuilt from one data file whenever records change; the masthead shows the date of the release each page was built from, and every record shows the date, or the period, of its own check. Languages are added in rounds as confirmed statements are found in their descriptions.</p>
+</div></details>
+
+<p class="note">Word Stress Catalog, data release of 18 September 2026. Maintainer: Matthew D. Schwartz (Harvard). Corrections and takedown requests: <a href="https://github.com/mattschwartzscience/word-stress-catalog/issues">open an issue at github.com/mattschwartzscience/word-stress-catalog</a>. <a href="#top">Back to top</a>.</p>
+</main>
+<script>
+(function(){
+  var all=document.querySelectorAll('details.faq');
+  function set(o){ for(var i=0;i<all.length;i++) all[i].open=o; }
+  document.getElementById('openall').onclick=function(){ set(true); };
+  document.getElementById('closeall').onclick=function(){ set(false); };
+  if(location.hash==='#all') set(true);
+})();
+</script>
+</body>
+</html>

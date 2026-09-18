@@ -1,0 +1,52 @@
+/* Word Stress Catalog: the Protocol and FAQ pages. Tokens, type and masthead come from bib/bib.css; this file adds the prose layout. */
+.doc{max-width:800px;margin:0 auto;padding:20px 22px 64px;min-width:0}
+.doc h2{font-family:"Gentium Book Plus",Georgia,serif;font-size:24px;font-weight:700;margin:36px 0 10px;line-height:1.25;text-wrap:balance}
+.doc h2 .num{font-family:"IBM Plex Mono",monospace;font-weight:400;font-size:13px;color:var(--ink3);margin-right:10px}
+.doc h3{font-size:15px;font-weight:600;margin:20px 0 6px}
+.doc p{margin:0 0 12px;font-size:14.5px;line-height:1.6}
+.doc p.lead{font-size:16.5px;line-height:1.55;color:var(--ink2);margin-bottom:16px}
+.doc ul,.doc ol{margin:0 0 12px;padding-left:22px;font-size:14.5px;line-height:1.6}
+.doc li{margin:0 0 4px}
+.doc code{font-family:"IBM Plex Mono",monospace;font-size:13px;background:var(--panel);border:1px solid var(--rule2);border-radius:4px;padding:0 4px}
+.doc .grid{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.04em;white-space:nowrap}
+.doc .grid b{color:var(--accent);font-weight:600}
+.doc blockquote.q{font-family:"Gentium Book Plus",Georgia,serif;font-size:15.5px;line-height:1.5;margin:12px 0;padding:12px 16px;border-left:3px solid var(--accent);background:var(--panel);color:var(--ink)}
+.doc blockquote.q p{margin:0;font-size:inherit}
+.toc{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:12px 16px;margin:8px 0 8px;font-size:13.5px;line-height:1.6}
+.toc ol{margin:0;padding-left:22px;columns:2;column-gap:24px}
+.toc li{break-inside:avoid}
+.toc a{text-decoration:none}
+.toc a:hover{text-decoration:underline}
+table.counts{border-collapse:collapse;width:100%;margin:8px 0 16px;font-size:13.5px;background:var(--panel);border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+table.counts th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink3);font-weight:600;padding:8px 10px;border-bottom:1px solid var(--rule)}
+table.counts td{padding:7px 10px;border-bottom:1px solid var(--rule2);vertical-align:top}
+table.counts tr:last-child td{border-bottom:0}
+table.counts td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;width:1%}
+.tablescroll{overflow-x:auto}
+dl.levels{margin:8px 0 14px;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 14px}
+dl.levels dt{margin:0}
+dl.levels dd{margin:0;line-height:1.55}
+dl.levels dd em{color:var(--ink2)}
+.tag.cf-4{background:var(--k-fixed-bg);color:var(--k-fixed)} .tag.cf-3{background:var(--k-dom-bg);color:var(--k-dom)} .tag.cf-2{background:var(--k-weight-bg);color:var(--k-weight)} .tag.cf-1{background:transparent;border:1px solid var(--warn);color:var(--warn)} .tag.cf-0{background:var(--k-other-bg);color:var(--k-other)} .tag.cf-x{background:var(--k-other-bg);color:var(--k-other)}
+.doc .note{font-size:12.5px;color:var(--ink3);margin-top:28px;border-top:1px solid var(--rule2);padding-top:10px;line-height:1.55}
+.btn.ghost.nav-on{background:var(--accent-soft)}
+/* FAQ */
+.faqctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 14px;font-size:13px;color:var(--ink3)}
+.faqctl button{border:1px solid var(--rule);background:var(--panel);border-radius:6px;padding:4px 10px;cursor:pointer;color:var(--accent);font-size:13px}
+.faqctl button:hover{border-color:var(--accent)}
+details.faq{background:var(--panel);border:1px solid var(--rule);border-radius:8px;margin:0 0 8px}
+details.faq summary{cursor:pointer;padding:10px 14px 10px 36px;font-weight:600;font-size:14.5px;line-height:1.45;position:relative;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::before{content:"+";position:absolute;left:13px;top:9px;font-family:"IBM Plex Mono",monospace;font-size:16px;color:var(--accent);width:14px;text-align:center}
+details.faq[open] summary::before{content:"\2212"}
+details.faq summary:hover{color:var(--accent)}
+details.faq .a{padding:0 14px 12px 36px;color:var(--ink2);font-size:14px;line-height:1.6}
+details.faq .a p{margin:0 0 8px;font-size:inherit}
+details.faq .a p:last-child{margin-bottom:0}
+@media (max-width:860px){
+  .doc{padding:14px 16px 48px}
+  .doc h2{font-size:21px;margin-top:28px}
+  .toc ol{columns:1}
+  dl.levels{grid-template-columns:1fr;gap:2px 0} dl.levels dd{margin:0 0 8px}
+  details.faq summary{padding-left:32px} details.faq summary::before{left:11px} details.faq .a{padding-left:32px}
+}
