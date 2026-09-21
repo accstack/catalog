@@ -1,15 +1,15 @@
 {
- "built": "2026-09-19T21:16:13Z",
+ "built": "2026-09-21T13:36:18Z",
  "languages": 8629,
- "in_catalog": 5183,
+ "in_catalog": 5289,
  "outside_catalog": 6763,
  "name_only_records_left_out": 19,
  "languages_zero_sources": 0,
  "languages_with_world_result": 6763,
  "languages_with_sweep_result": 733,
- "languages_with_readall_result": 4821,
- "languages_with_new_statement": 4639,
- "languages_with_verified_new_statement": 4540,
+ "languages_with_readall_result": 5244,
+ "languages_with_new_statement": 4886,
+ "languages_with_verified_new_statement": 4722,
  "records_audited": 1864,
  "by_confidence": {
   "very confident": 1338,
@@ -17,35 +17,35 @@
   "moderately confident": 164,
   "disputed": 67,
   "not confident": 734,
-  "not yet rated": 74
+  "not yet rated": 180
  },
- "sources": 136153,
+ "sources": 141589,
  "by_tag": {
   "states stress (quoted in catalog)": 1807,
   "states stress (domain / secondary stress passage)": 380,
-  "states stress (new statement, read)": 4114,
-  "read: confirms the catalog coding": 2154,
-  "read: refines the catalog coding": 1783,
-  "read: contradicts the catalog coding": 366,
-  "read: notes on stress": 10635,
-  "read: silent on stress": 32011,
+  "states stress (new statement, read)": 4304,
+  "read: confirms the catalog coding": 2338,
+  "read: refines the catalog coding": 2050,
+  "read: contradicts the catalog coding": 394,
+  "read: notes on stress": 10928,
+  "read: silent on stress": 36214,
   "read (morphology study)": 584,
   "consulted for the record": 1308,
-  "likely states stress; not yet obtained": 33776,
-  "not read: abstract or record only": 6773,
-  "not read: not accessible": 2056,
-  "Glottolog description, unread": 32177,
-  "Glottolog phonology work, unread": 4921,
-  "named in our earlier survey, not yet opened": 1297,
+  "likely states stress; not yet obtained": 32823,
+  "not read: abstract or record only": 7922,
+  "not read: not accessible": 2047,
+  "Glottolog description, unread": 32325,
+  "Glottolog phonology work, unread": 4904,
+  "named in our earlier survey, not yet opened": 1250,
   "obtained by hand (Matt, 2026-09-18); read it": 11
  },
  "by_access_class": {
-  "digital": 74853,
-  "digital_open": 57100,
-  "digital_gated": 17753,
+  "digital": 80489,
+  "digital_open": 62071,
+  "digital_gated": 18418,
   "scan_deliver": 1903,
-  "print_only": 11454,
-  "unknown": 47943
+  "print_only": 11390,
+  "unknown": 47807
  },
  "languages_by_best_access": {
   "digital": 8624,
@@ -56,23 +56,22 @@
   "none": 0
  },
  "works_with_unopenable_link": {
-  "abstract-or-snippet-only -> digital": 8,
-  "abstract-or-snippet-only -> digital gated": 464,
-  "fetch-failed -> digital": 27,
-  "fetch-failed -> digital gated": 356,
-  "not-accessible -> digital": 23,
-  "not-accessible -> digital gated": 1791,
-  "wrong-item -> digital": 1,
-  "wrong-item -> digital gated": 238,
+  "abstract-or-snippet-only -> digital": 5,
+  "abstract-or-snippet-only -> digital gated": 1481,
+  "fetch-failed -> digital": 3,
+  "fetch-failed -> digital gated": 441,
+  "not-accessible -> digital": 5,
+  "not-accessible -> digital gated": 1380,
+  "wrong-item -> digital gated": 228,
   "wrong-item -> print_only": 7,
   "wrong-item -> scan_deliver": 14,
-  "wrong-item -> unknown": 52
+  "wrong-item -> unknown": 55
  },
  "by_origin": {
   "database": 2928,
   "glottolog": 52249,
-  "reader": 79678,
-  "scan": 1298
+  "reader": 85161,
+  "scan": 1251
  },
  "world_store": {
   "A": 6763,
@@ -83,10 +82,10 @@
   "B": 362
  },
  "readall_store": {
-  "A": 6119,
-  "B": 3840,
-  "items_listed": 6119,
-  "languages_listed": 4821
+  "A": 9530,
+  "B": 6134,
+  "items_listed": 9530,
+  "languages_listed": 5244
  },
- "seconds": 2094.0
+ "seconds": 1860.0
 }
