@@ -1,37 +1,41 @@
 {
- "built": "2026-09-21T19:44:35Z",
+ "built": "2026-09-22T23:09:54Z",
  "languages": 8629,
- "in_catalog": 5299,
+ "in_catalog": 5300,
  "outside_catalog": 6763,
  "name_only_records_left_out": 19,
  "languages_zero_sources": 0,
  "languages_with_world_result": 6763,
  "languages_with_sweep_result": 733,
- "languages_with_readall_result": 5255,
+ "languages_with_readall_result": 6998,
  "languages_with_new_statement": 4919,
  "languages_with_verified_new_statement": 4738,
  "records_audited": 1864,
  "by_confidence": {
-  "very confident": 1368,
-  "fairly confident": 2828,
+  "very confident": 1502,
+  "fairly confident": 3107,
   "moderately confident": 171,
   "disputed": 69,
-  "not confident": 747,
+  "not confident": 335,
   "not yet rated": 116
  },
- "sources": 142592,
+ "sources": 156038,
  "by_tag": {
   "states stress (quoted in catalog)": 1807,
   "states stress (domain / secondary stress passage)": 380,
-  "states stress (new statement, read)": 4344,
-  "read: confirms the catalog coding": 2341,
+  "states stress (new statement, read)": 4342,
+  "read: confirms the catalog coding": 2343,
   "read: refines the catalog coding": 2088,
   "read: contradicts the catalog coding": 393,
   "read: notes on stress": 11029,
   "read: silent on stress": 36951,
+  "read: states tone": 1835,
+  "read: notes on tone": 978,
+  "read: silent on tone": 1411,
   "read (morphology study)": 584,
   "consulted for the record": 1308,
   "likely states stress; not yet obtained": 32742,
+  "likely states tone; not yet obtained": 9222,
   "not read: abstract or record only": 8096,
   "not read: not accessible": 2047,
   "Glottolog description, unread": 32319,
@@ -40,16 +44,16 @@
   "obtained by hand (Matt, 2026-09-18); read it": 11
  },
  "by_access_class": {
-  "digital": 81545,
-  "digital_open": 63059,
-  "digital_gated": 18486,
-  "scan_deliver": 1903,
-  "print_only": 11361,
-  "unknown": 47783
+  "digital": 91006,
+  "digital_open": 69862,
+  "digital_gated": 21144,
+  "scan_deliver": 4130,
+  "print_only": 12540,
+  "unknown": 48362
  },
  "languages_by_best_access": {
-  "digital": 8624,
-  "digital_gated": 2,
+  "digital": 8625,
+  "digital_gated": 1,
   "scan_deliver": 0,
   "print_only": 1,
   "unknown": 2,
@@ -57,12 +61,12 @@
  },
  "works_with_unopenable_link": {
   "abstract-or-snippet-only -> digital": 5,
-  "abstract-or-snippet-only -> digital gated": 1604,
+  "abstract-or-snippet-only -> digital gated": 1602,
   "fetch-failed -> digital": 1,
-  "fetch-failed -> digital gated": 441,
+  "fetch-failed -> digital gated": 440,
   "not-accessible -> digital": 4,
-  "not-accessible -> digital gated": 1305,
-  "wrong-item -> digital gated": 227,
+  "not-accessible -> digital gated": 1301,
+  "wrong-item -> digital gated": 218,
   "wrong-item -> print_only": 7,
   "wrong-item -> scan_deliver": 14,
   "wrong-item -> unknown": 55
@@ -70,7 +74,7 @@
  "by_origin": {
   "database": 2928,
   "glottolog": 52249,
-  "reader": 86166,
+  "reader": 99612,
   "scan": 1249
  },
  "world_store": {
@@ -82,10 +86,44 @@
   "B": 362
  },
  "readall_store": {
-  "A": 10065,
-  "B": 6540,
-  "items_listed": 10065,
-  "languages_listed": 5255
+  "A": 14737,
+  "B": 11212,
+  "items_listed": 14737,
+  "languages_listed": 7001
  },
- "seconds": 2151.6
+ "tone": {
+  "access:digital": 6279,
+  "access:digital_gated": 2753,
+  "access:print_only": 1266,
+  "access:scan_deliver": 2240,
+  "access:unknown": 908,
+  "held_copy": 4747,
+  "joined_existing_row": 1237,
+  "joins": {
+   "joined:hint-citation": 1210,
+   "joined:ra_match": 27,
+   "new row key collided with an unmatched card row (kept separate)": 3,
+   "new:notes": 978,
+   "new:silent": 1411,
+   "new:states": 1835,
+   "new:unread": 9222,
+   "second tone row for one card row (weaker; folded)": 56
+  },
+  "languages_with_tone_statement": 1511,
+  "languages_with_tone_work": 4338,
+  "languages_with_verified_tone_statement": 1511,
+  "new_row": 13446,
+  "open_access": 7037,
+  "read": 5101,
+  "rows_in_catalog_languages": 11922,
+  "states": 2190,
+  "status:notes": 1108,
+  "status:silent": 1803,
+  "status:states": 2190,
+  "status:unread": 9582,
+  "unread": 9582,
+  "verified_statements": 2190,
+  "works": 14683
+ },
+ "seconds": 2241.3
 }
