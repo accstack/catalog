@@ -1,5 +1,5 @@
 {
- "built": "2026-09-23T08:58:51Z",
+ "built": "2026-09-23T11:58:59Z",
  "languages": 8629,
  "in_catalog": 5582,
  "outside_catalog": 6763,
@@ -13,33 +13,33 @@
  "records_audited": 1864,
  "by_confidence": {
   "very confident": 1035,
-  "fairly confident": 3574,
-  "moderately confident": 171,
+  "fairly confident": 3901,
+  "moderately confident": 199,
   "disputed": 69,
-  "not confident": 335,
-  "not yet rated": 398
+  "not confident": 378,
+  "not yet rated": 0
  },
  "sources": 155914,
  "by_tag": {
-  "states stress (quoted in catalog)": 1807,
-  "states stress (domain / secondary stress passage)": 380,
-  "states stress (new statement, read)": 4322,
-  "read: confirms the catalog coding": 2343,
-  "read: refines the catalog coding": 2108,
-  "read: contradicts the catalog coding": 393,
-  "read: notes on stress": 11029,
-  "read: silent on stress": 36951,
-  "read: states tone": 1836,
+  "states stress (quoted in catalog)": 1806,
+  "states stress (domain / secondary stress passage)": 378,
+  "states stress (new statement, read)": 4313,
+  "read: confirms the catalog coding": 2331,
+  "read: refines the catalog coding": 2091,
+  "read: contradicts the catalog coding": 397,
+  "read: notes on stress": 11113,
+  "read: silent on stress": 36942,
+  "read: states tone": 1834,
   "read: notes on tone": 977,
-  "read: silent on tone": 1422,
-  "read (morphology study)": 584,
-  "consulted for the record": 1308,
-  "likely states stress; not yet obtained": 32742,
+  "read: silent on tone": 1420,
+  "read (morphology study)": 581,
+  "consulted for the record": 1305,
+  "likely states stress; not yet obtained": 32737,
   "likely states tone; not yet obtained": 9221,
-  "not read: abstract or record only": 8096,
+  "not read: abstract or record only": 8095,
   "not read: not accessible": 2047,
-  "Glottolog description, unread": 32319,
-  "Glottolog phonology work, unread": 4904,
+  "Glottolog description, unread": 32299,
+  "Glottolog phonology work, unread": 4902,
   "named in our earlier survey, not yet opened": 1114,
   "obtained by hand (Matt, 2026-09-18); read it": 11
  },
@@ -125,5 +125,5 @@
   "verified_statements": 2268,
   "works": 14779
  },
- "seconds": 2057.7
+ "seconds": 2372.1
 }
