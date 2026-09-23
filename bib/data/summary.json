@@ -1,5 +1,5 @@
 {
- "built": "2026-09-22T23:09:54Z",
+ "built": "2026-09-23T04:35:55Z",
  "languages": 8629,
  "in_catalog": 5300,
  "outside_catalog": 6763,
@@ -12,8 +12,8 @@
  "languages_with_verified_new_statement": 4738,
  "records_audited": 1864,
  "by_confidence": {
-  "very confident": 1502,
-  "fairly confident": 3107,
+  "very confident": 1035,
+  "fairly confident": 3574,
   "moderately confident": 171,
   "disputed": 69,
   "not confident": 335,
@@ -125,5 +125,5 @@
   "verified_statements": 2190,
   "works": 14683
  },
- "seconds": 2241.3
+ "seconds": 2062.1
 }
