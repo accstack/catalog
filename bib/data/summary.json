@@ -1,5 +1,5 @@
 {
- "built": "2026-09-23T11:58:59Z",
+ "built": "2026-09-23T13:30:29Z",
  "languages": 8629,
  "in_catalog": 5582,
  "outside_catalog": 6763,
@@ -7,7 +7,7 @@
  "languages_zero_sources": 0,
  "languages_with_world_result": 6763,
  "languages_with_sweep_result": 733,
- "languages_with_readall_result": 6998,
+ "languages_with_readall_result": 7046,
  "languages_with_new_statement": 4919,
  "languages_with_verified_new_statement": 4738,
  "records_audited": 1864,
@@ -19,7 +19,7 @@
   "not confident": 378,
   "not yet rated": 0
  },
- "sources": 155914,
+ "sources": 155975,
  "by_tag": {
   "states stress (quoted in catalog)": 1806,
   "states stress (domain / secondary stress passage)": 378,
@@ -35,7 +35,7 @@
   "read (morphology study)": 581,
   "consulted for the record": 1305,
   "likely states stress; not yet obtained": 32737,
-  "likely states tone; not yet obtained": 9221,
+  "likely states tone; not yet obtained": 9282,
   "not read: abstract or record only": 8095,
   "not read: not accessible": 2047,
   "Glottolog description, unread": 32299,
@@ -44,12 +44,12 @@
   "obtained by hand (Matt, 2026-09-18); read it": 11
  },
  "by_access_class": {
-  "digital": 91021,
-  "digital_open": 69878,
-  "digital_gated": 21143,
+  "digital": 91035,
+  "digital_open": 69880,
+  "digital_gated": 21155,
   "scan_deliver": 4129,
   "print_only": 12539,
-  "unknown": 48225
+  "unknown": 48272
  },
  "languages_by_best_access": {
   "digital": 8625,
@@ -74,7 +74,7 @@
  "by_origin": {
   "database": 2928,
   "glottolog": 52249,
-  "reader": 99622,
+  "reader": 99683,
   "scan": 1115
  },
  "world_store": {
@@ -86,44 +86,45 @@
   "B": 362
  },
  "readall_store": {
-  "A": 14740,
-  "B": 11215,
-  "items_listed": 14740,
-  "languages_listed": 7001
+  "A": 15106,
+  "B": 11581,
+  "items_listed": 15106,
+  "languages_listed": 7049
  },
  "tone": {
-  "access:digital": 6289,
-  "access:digital_gated": 2753,
+  "access:digital": 6291,
+  "access:digital_gated": 2764,
   "access:print_only": 1266,
   "access:scan_deliver": 2240,
-  "access:unknown": 908,
-  "held_copy": 4844,
-  "joined_existing_row": 1323,
+  "access:unknown": 956,
+  "held_copy": 5269,
+  "joined_existing_row": 3846,
   "joins": {
-   "joined:hint-citation": 1209,
-   "joined:ra_match": 114,
-   "new row key collided with an unmatched card row (kept separate)": 5,
+   "joined:doi": 8,
+   "joined:hint-citation": 3678,
+   "joined:ra_match": 160,
+   "new row key collided with an unmatched card row (kept separate)": 6,
    "new:notes": 977,
    "new:silent": 1422,
    "new:states": 1836,
-   "new:unread": 9221,
-   "second tone row for one card row (weaker; folded)": 56
+   "new:unread": 9282,
+   "second tone row for one card row (weaker; folded)": 72
   },
   "languages_with_tone_statement": 1503,
-  "languages_with_tone_work": 4338,
+  "languages_with_tone_work": 4474,
   "languages_with_verified_tone_statement": 1503,
-  "new_row": 13456,
+  "new_row": 13517,
   "open_access": 7129,
   "read": 5198,
-  "rows_in_catalog_languages": 13034,
+  "rows_in_catalog_languages": 15487,
   "states": 2268,
   "status:notes": 1117,
   "status:silent": 1813,
   "status:states": 2268,
-  "status:unread": 9581,
-  "unread": 9581,
+  "status:unread": 12165,
+  "unread": 12165,
   "verified_statements": 2268,
-  "works": 14779
+  "works": 17363
  },
- "seconds": 2372.1
+ "seconds": 2373.7
 }
