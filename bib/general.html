@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>General works on stress and tone · ACCSTACK</title>
+<meta name="description" content="Works on word stress and tone that name no single language: theory, typology, surveys and cross-linguistic studies, listed with their access.">
+<link rel="icon" href="https://accstack.org/favicon.ico" sizes="any"><link rel="icon" href="https://accstack.org/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="bib.css">
+<style>
+.gen{max-width:1080px;margin:0 auto;padding:0 16px}
+.gen h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2rem;margin:1rem 0 .3rem}
+.gen .lead{color:var(--muted);margin:0 0 1rem;max-width:50em}
+.gen .bar{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:.6rem 0 1rem}
+.gen input{padding:.45rem .6rem;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit;width:22em;max-width:100%}
+.gen select{padding:.45rem;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit}
+.gen .n{color:var(--muted);font-size:.9rem}
+.gen ol{list-style:none;padding:0;margin:0}
+.gen li{padding:.55rem 0;border-top:1px solid var(--line);font-size:.95rem}
+.gen li .t{font-weight:500}
+.gen li .m{color:var(--muted);font-size:.88rem}
+.gen li .m a{color:var(--accent)}
+.gen .tag{display:inline-block;font-size:.75rem;padding:.05rem .4rem;border:1px solid var(--line);border-radius:4px;margin-left:.4rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="acc-strip"><a class="mark" href="https://accstack.org/"><span class="a">ACC</span><span class="s">ST</span>ACK</a><nav><a href="https://accstack.org/catalog/">Catalog</a><a href="https://accstack.org/bibliography/" aria-current="page">Bibliography</a><a href="https://accstack.org/typotron/">Typotron</a><a href="https://accstack.org/about/">About</a><a href="https://accstack.org/contributing/">Contributing</a><a href="https://accstack.org/credits/">Credits</a></nav></div>
+<main class="gen">
+<h1>General works on stress and tone</h1>
+<p class="lead">Works about word stress, accent or tone that name no single language: theory, typology, surveys and cross-linguistic studies, found by enumerating the world's linguistics journals. None has been examined yet; they are listed so that a reader can find them. Works on a particular language are on that language's page of the <a href="index.html">bibliography</a>.</p>
+<div class="bar"><input id="q" type="search" placeholder="Search title, author, journal…"><select id="acc"><option value="">Any access</option><option value="open">Open access</option><option value="gated">Restricted access</option></select><select id="sort"><option value="year">Newest first</option><option value="author">By author</option></select><span class="n" id="n"></span></div>
+<ol id="list"></ol>
+</main>
+<script>
+(async function(){
+  const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  let rows=[]; try{ const j=await (await fetch('data/general.json')).json(); rows=Array.isArray(j)?j:(j.sources||j.works||Object.values(j)[0]||[]); }catch(e){ document.getElementById('n').textContent='The list could not be loaded.'; return; }
+  const yr=r=>parseInt(r.year)||0; const gated=r=>String(r.digital_gated)==='True'||r.digital_gated===true;
+  const auth=r=>{ try{ const a=typeof r.authors==='string'?JSON.parse(r.authors.replace(/'/g,'"')):r.authors; return (a||[]).filter(x=>x&&x.replace(/[ ,]/g,'')).join('; '); }catch(e){ return ''; } };
+  const state={q:'',acc:'',sort:'year'};
+  function render(){ const q=state.q.toLowerCase(); let out=rows.filter(r=>{ if(state.acc==='open'&&gated(r)) return false; if(state.acc==='gated'&&!gated(r)) return false; if(q){ const h=(r.title+' '+auth(r)+' '+(r.venue||'')).toLowerCase(); if(!h.includes(q)) return false; } return true; });
+    out.sort(state.sort==='year'?((a,b)=>yr(b)-yr(a)):((a,b)=>auth(a).localeCompare(auth(b))));
+    document.getElementById('n').textContent=out.length.toLocaleString('en-US')+' of '+rows.length.toLocaleString('en-US')+' works';
+    document.getElementById('list').innerHTML=out.slice(0,600).map(r=>`<li><div class="t">${esc(r.title||r.citation)}${gated(r)?'<span class="tag">restricted</span>':'<span class="tag">open</span>'}</div><div class="m">${esc(auth(r))}${auth(r)?' · ':''}${esc(r.year||'')} · ${esc(r.venue||'')}${r.doi?` · <a href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener">DOI</a>`:''}${r.open_url?` · <a href="${esc(r.open_url)}" target="_blank" rel="noopener">open copy</a>`:''}</div></li>`).join('')+(out.length>600?'<li class="m">Showing the first 600; narrow the search to see the rest.</li>':''); }
+  document.getElementById('q').oninput=e=>{ state.q=e.target.value; render(); }; document.getElementById('acc').onchange=e=>{ state.acc=e.target.value; render(); }; document.getElementById('sort').onchange=e=>{ state.sort=e.target.value; render(); };
+  render();
+})();
+</script>
+</body>
+</html>

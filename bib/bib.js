@@ -65,6 +65,7 @@ const GROUPS=[
  ['tonewanted','Not yet examined: likely to describe tone',['likely states tone; not yet obtained'],false],
  ['consulted','Other works consulted for the entry',['consulted for the record'],true],
  ['wanted','Not yet examined: likely to describe stress',['wanted: likely states stress, not held','likely states stress; not yet obtained'],true],
+ ['wantednotes','Not yet examined: likely to mention stress or tone',['likely notes on stress or tone; not yet obtained','likely notes on stress; not yet obtained'],false],
  ['gldesc','Not yet examined: descriptive works',['Glottolog description, unread','named by the earlier scan, not opened','named in our earlier survey, not yet opened'],false],
  ['glphon','Not yet examined: phonological studies',['Glottolog phonology work, unread'],false],
  ['inacc','No copy accessible to us',['not read: not accessible'],false],
