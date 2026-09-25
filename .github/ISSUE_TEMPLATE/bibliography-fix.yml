@@ -1,0 +1,23 @@
+name: Bibliography fix
+description: A work whose access, citation or identity in the bibliography is wrong.
+title: "[language name]: bibliography"
+labels: [bibliography]
+body:
+  - type: input
+    id: language
+    attributes: {label: Language and Glottocode}
+    validations: {required: true}
+  - type: textarea
+    id: work
+    attributes: {label: The work as listed}
+    validations: {required: true}
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong
+      options: [An open copy exists (give the address below), Marked paywalled or not located but a library holds it, Wrong citation, Duplicate of another row, Listed under the wrong language, Other]
+    validations: {required: true}
+  - type: textarea
+    id: detail
+    attributes: {label: Details, description: "Address of the open copy, the library, the correct citation, or the duplicate row."}
+    validations: {required: true}

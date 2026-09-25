@@ -1,0 +1,19 @@
+name: Missing source
+description: A published description of a language's stress or tone that is not in its bibliography, or a language with a description but no entry.
+title: "[language name]: missing source"
+labels: [bibliography]
+body:
+  - type: input
+    id: language
+    attributes: {label: Language and Glottocode}
+    validations: {required: true}
+  - type: textarea
+    id: citation
+    attributes: {label: Full citation, description: "Author, year, title, where published; DOI or address if there is one."}
+    validations: {required: true}
+  - type: input
+    id: where
+    attributes: {label: Where it discusses stress or tone, placeholder: "section 2.4, pp. 31-35"}
+  - type: textarea
+    id: says
+    attributes: {label: What it says, description: "A sentence or two, quoted if you can."}

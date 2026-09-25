@@ -1,0 +1,30 @@
+name: Catalog correction
+description: An entry says something its published source does not, or leaves out something the source states.
+title: "[language name]: "
+labels: [catalog]
+body:
+  - type: markdown
+    attributes:
+      value: "Corrections must be attested in a published source. One language per issue."
+  - type: input
+    id: language
+    attributes: {label: Language and Glottocode, placeholder: "Polish, poli1260"}
+    validations: {required: true}
+  - type: dropdown
+    id: field
+    attributes:
+      label: Which part of the entry
+      options: [Stress type, Stressed syllables / rule, Secondary stress, Exceptions, Domain of the rule, Tone system, Source or citation, Language identity / Glottocode, Other]
+    validations: {required: true}
+  - type: textarea
+    id: source
+    attributes: {label: Published source, description: "Full citation with page or section.", placeholder: "Rubach, Jerzy & Geert Booij. 1985. A grid theory of stress in Polish. Lingua 66: 281-319, p. 283."}
+    validations: {required: true}
+  - type: textarea
+    id: passage
+    attributes: {label: The passage, description: "Quoted exactly from the source, with a translation if it is not in English."}
+    validations: {required: true}
+  - type: textarea
+    id: change
+    attributes: {label: What the entry should say}
+    validations: {required: true}

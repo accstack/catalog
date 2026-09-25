@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email instead
+    url: mailto:schwartz@physics.harvard.edu?subject=ACCSTACK%20correction
+    about: Send the same information (language, field, source, passage, change) by email.

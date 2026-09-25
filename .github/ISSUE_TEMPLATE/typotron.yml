@@ -1,0 +1,20 @@
+name: Typotron problem
+description: A wrong result, a crash, or a disagreement with a published analysis.
+title: "Typotron: "
+labels: [typotron]
+body:
+  - type: textarea
+    id: input
+    attributes: {label: Constraint set or input file, description: "Paste it, or attach the file."}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: What you expected, description: "With the published analysis it should match, if any."}
+    validations: {required: true}
+  - type: textarea
+    id: got
+    attributes: {label: What you got}
+    validations: {required: true}
+  - type: input
+    id: browser
+    attributes: {label: Browser and version}
