@@ -621,7 +621,7 @@ function openDrawerNow(r){ const d=document.getElementById('drawer'); const b=do
   const nS=src.length, nO=oth.length+(corrHTML?1:0);
   const soundBox=nRec?box('sound','Sound',`${nRec} recording${nRec===1?'':'s'}`,soundHTML):'';
   const sourcesBox=nS?box('sources','Sources and evidence',`${nS} item${nS===1?'':'s'}`,(src.length?`<dl class="kv">${src.join('')}</dl>`:'')):'';
-  const otherBox=nO?box('other','Details of the system',`${nO} item${nO===1?'':'s'}`,(oth.length?`<dl class="kv">${oth.join('')}</dl>`:'')+corrHTML):'';
+  const otherBox=nO?box('other','Weight, domain and exceptions',`${nO} item${nO===1?'':'s'}`,(oth.length?`<dl class="kv">${oth.join('')}</dl>`:'')+corrHTML):'';
   b.innerHTML=`<h2>${esc(r.n)}</h2><div class="meta">${r.g?`<a class="ext" href="https://glottolog.org/resource/languoid/id/${r.g}" target="_blank" rel="noopener" title="Glottolog: classification, location, full bibliography">Glottolog ${esc(r.g)}</a>`:'<span>no Glottolog code</span>'}<span>${esc(r.fam)}</span><span>${esc(r.area||'—')}</span><span>${esc(r.srcl)}</span>${r.ll?`<span>${r.ll[0]}°, ${r.ll[1]}°</span>`:''}</div><div class="cfbox">${cfBadge(r)}</div>${top.length?box('stress','Stress and tone','',`<dl class="kv">${top.join('')}</dl>`):''}${contraHTML}${cautionHTML}${otherBox}${soundBox}${sourcesBox}`;
   b.querySelectorAll('details.dbox').forEach(el=>el.addEventListener('toggle',()=>saveBox(el.dataset.box,el.open)));
   const sa=b.querySelector('.showall'); if(sa) sa.onclick=()=>{ b.querySelectorAll('.listen li[hidden]').forEach(li=>{ li.hidden=false; }); sa.remove(); };
