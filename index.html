@@ -544,7 +544,7 @@ function openDrawer(r){ if(!SPLIT||r._d){ openDrawerNow(r); return; } const d=do
 // Record drawer (restructured 2026-09-25 on Matt's brief): the stress/tone characterisation on top, always open; then three collapsible boxes —
 // Sound (the recordings, closed by default), Sources and evidence (open by default), Other features (closed by default). A reader's open/closed
 // choice for each box is kept in localStorage under the one key 'drawerBoxes' (every access wrapped; the page works without storage).
-const BOX_DEFAULT={sound:false,sources:true,other:false};
+const BOX_DEFAULT={stress:true,other:false,sound:false,sources:true};
 function boxStates(){ try{ const v=JSON.parse(localStorage.getItem('drawerBoxes')||'{}'); return (v&&typeof v==='object'&&!Array.isArray(v))?v:{}; }catch(e){ return {}; } }
 function boxOpen(k){ const s=boxStates(); return Object.prototype.hasOwnProperty.call(s,k)?!!s[k]:!!BOX_DEFAULT[k]; }
 function saveBox(k,open){ try{ const s=boxStates(); s[k]=!!open; localStorage.setItem('drawerBoxes',JSON.stringify(s)); }catch(e){} }
@@ -621,8 +621,8 @@ function openDrawerNow(r){ const d=document.getElementById('drawer'); const b=do
   const nS=src.length, nO=oth.length+(corrHTML?1:0);
   const soundBox=nRec?box('sound','Sound',`${nRec} recording${nRec===1?'':'s'}`,soundHTML):'';
   const sourcesBox=nS?box('sources','Sources and evidence',`${nS} item${nS===1?'':'s'}`,(src.length?`<dl class="kv">${src.join('')}</dl>`:'')):'';
-  const otherBox=nO?box('other','Other features',`${nO} item${nO===1?'':'s'}`,(oth.length?`<dl class="kv">${oth.join('')}</dl>`:'')+corrHTML):'';
-  b.innerHTML=`<h2>${esc(r.n)}</h2><div class="meta">${r.g?`<a class="ext" href="https://glottolog.org/resource/languoid/id/${r.g}" target="_blank" rel="noopener" title="Glottolog: classification, location, full bibliography">Glottolog ${esc(r.g)}</a>`:'<span>no Glottolog code</span>'}<span>${esc(r.fam)}</span><span>${esc(r.area||'—')}</span><span>${esc(r.srcl)}</span>${r.ll?`<span>${r.ll[0]}°, ${r.ll[1]}°</span>`:''}</div><div class="cfbox">${cfBadge(r)}</div><div class="dsec"><h3>Stress and tone</h3><dl class="kv">${top.join('')}</dl></div>${contraHTML}${cautionHTML}${soundBox}${sourcesBox}${otherBox}`;
+  const otherBox=nO?box('other','Details of the system',`${nO} item${nO===1?'':'s'}`,(oth.length?`<dl class="kv">${oth.join('')}</dl>`:'')+corrHTML):'';
+  b.innerHTML=`<h2>${esc(r.n)}</h2><div class="meta">${r.g?`<a class="ext" href="https://glottolog.org/resource/languoid/id/${r.g}" target="_blank" rel="noopener" title="Glottolog: classification, location, full bibliography">Glottolog ${esc(r.g)}</a>`:'<span>no Glottolog code</span>'}<span>${esc(r.fam)}</span><span>${esc(r.area||'—')}</span><span>${esc(r.srcl)}</span>${r.ll?`<span>${r.ll[0]}°, ${r.ll[1]}°</span>`:''}</div><div class="cfbox">${cfBadge(r)}</div>${top.length?box('stress','Stress and tone','',`<dl class="kv">${top.join('')}</dl>`):''}${contraHTML}${cautionHTML}${otherBox}${soundBox}${sourcesBox}`;
   b.querySelectorAll('details.dbox').forEach(el=>el.addEventListener('toggle',()=>saveBox(el.dataset.box,el.open)));
   const sa=b.querySelector('.showall'); if(sa) sa.onclick=()=>{ b.querySelectorAll('.listen li[hidden]').forEach(li=>{ li.hidden=false; }); sa.remove(); };
   d.classList.add('open'); d.setAttribute('aria-hidden','false'); document.querySelectorAll('tbody tr').forEach(tr=>tr.classList.remove('sel')); }
