@@ -1,7 +1,7 @@
 /* Word Stress Catalog bibliography page: the accstack.org tokens (accstack_site/site.css), the catalog's type and table style, plus the pieces this page adds. Restyled 2026-09-25. */
 :root{
   --paper:#fbfaf7; --ink:#17181a; --muted:#6b6f76; --line:#e2e0da; --card:#ffffff;
-  --accent:#0f766e; --accent-soft:#e0f2f0; --focus:var(--accent);
+  --accent:#c8102e; --accent-soft:#fbe9ec; --focus:var(--accent);
   --soft:#efeeea;                                             /* neutral filled badges and row hover */
   --mid:color-mix(in srgb, var(--ink) 60%, var(--muted));     /* secondary body text, between ink and muted */
   --line2:color-mix(in srgb, var(--line) 60%, var(--card));   /* the lighter row rules */
@@ -10,12 +10,12 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#121316; --ink:#ecebe6; --muted:#a3a7ad; --line:#2c2e33; --card:#1a1b1f;
-  --accent:#2dd4bf; --accent-soft:#123b36;
+  --accent:#ff5a6e; --accent-soft:#3a1a20;
   --soft:#26272c; --shadow:0 8px 28px rgba(0,0,0,.5);
 }}
 :root[data-theme="dark"]{
   --paper:#121316; --ink:#ecebe6; --muted:#a3a7ad; --line:#2c2e33; --card:#1a1b1f;
-  --accent:#2dd4bf; --accent-soft:#123b36;
+  --accent:#ff5a6e; --accent-soft:#3a1a20;
   --soft:#26272c; --shadow:0 8px 28px rgba(0,0,0,.5);
 }
 *{box-sizing:border-box}
@@ -24,7 +24,7 @@ button,input,select{font:inherit;color:inherit}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
 :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 /* accstack.org strip: the site wordmark and the links to the other parts, above this app's own header */
-.acc-strip{border-bottom:3px solid var(--accent);display:flex;align-items:center;gap:12px 20px;min-height:44px;padding:0 22px;background:var(--paper);border-bottom:1px solid var(--line)}
+.acc-strip{display:flex;align-items:center;gap:12px 20px;min-height:44px;padding:0 22px;background:var(--paper);border-bottom:1px solid var(--line)}
 .acc-strip .acc-mark{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-optical-sizing:auto;font-size:18px;letter-spacing:-.01em;line-height:1;text-decoration:none;color:var(--ink);flex:none}
 .acc-strip .acc-mark .a{color:var(--ink)}.acc-strip .acc-mark .s{color:var(--accent)}
 .acc-strip nav{margin-left:auto;display:flex;gap:18px;font-size:13.5px;min-width:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
